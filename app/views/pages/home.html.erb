@@ -1,1 +1,27 @@
 <h1>Welcome to the homepage</h1>
+
+<% "This is without equal sign" %>
+<%= "This is with equal sign" %>
+
+<% numbers = [1,2,3,4,5] %>
+
+
+<% numbers.each do |number| %>
+  <%= number %>
+<% end %>
+
+<% age = 17 %>
+
+
+<% if age < 18 %>
+  <p>You cannot vote</p>
+<% else %>
+  <p>You can vote</p>
+<% end %>
+
+<%= link_to "Go to Contact", contact_path %>
+
+<%# If we want to create a custom link %>
+<%= link_to about_path do %>
+  <h3>Go to about</h3>
+<% end %>
